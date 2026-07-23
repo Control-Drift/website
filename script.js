@@ -5,10 +5,10 @@ let width, height, cx, cy;
 function resize() {
   width = canvas.width = window.innerWidth;
   height = canvas.height = window.innerHeight;
+  
+  // Center the black hole perfectly
   cx = width / 2;
   cy = height / 2;
-  // Offset center slightly to the right to balance the left-aligned hero text
-  cx = width * 0.6; 
 }
 window.addEventListener('resize', resize);
 resize();
