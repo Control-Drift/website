@@ -4,8 +4,7 @@ let width, height, cx, cy;
 let EVENT_HORIZON_RADIUS = 70;
 
 function resize() {
-  // Use clientWidth instead of innerWidth to exclude scrollbar width for perfect centering
-  width = canvas.width = document.documentElement.clientWidth;
+  width = canvas.width = window.innerWidth;
   height = canvas.height = window.innerHeight;
   
   // Center the black hole perfectly

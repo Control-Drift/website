@@ -152,6 +152,7 @@ h1, h2, h3, .logo-text, .badge, .btn {
   align-items: center;
   padding: 8rem 2rem 4rem;
   text-align: center;
+  overflow-x: hidden;
 }
 
 .hero-content {
