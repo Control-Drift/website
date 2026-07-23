@@ -505,6 +505,23 @@ footer {
   height: 350px; 
   max-width: 90vw;
   margin: 0;
+  animation: floatEmblem 8s ease-in-out infinite;
+  will-change: transform, filter;
+}
+
+@keyframes floatEmblem {
+  0% {
+    transform: translateY(0px) scale(1);
+    filter: drop-shadow(0 0 15px rgba(157, 78, 221, 0.3)) drop-shadow(0 0 30px rgba(0, 229, 255, 0.1));
+  }
+  50% {
+    transform: translateY(-20px) scale(1.03);
+    filter: drop-shadow(0 0 35px rgba(157, 78, 221, 0.7)) drop-shadow(0 0 70px rgba(255, 10, 120, 0.4));
+  }
+  100% {
+    transform: translateY(0px) scale(1);
+    filter: drop-shadow(0 0 15px rgba(157, 78, 221, 0.3)) drop-shadow(0 0 30px rgba(0, 229, 255, 0.1));
+  }
 }
 
 .footer-links {
