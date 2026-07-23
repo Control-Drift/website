@@ -1,14 +1,19 @@
 const canvas = document.getElementById('blackhole-canvas');
 const ctx = canvas.getContext('2d');
 let width, height, cx, cy;
+let EVENT_HORIZON_RADIUS = 70;
 
 function resize() {
-  width = canvas.width = window.innerWidth;
+  // Use clientWidth instead of innerWidth to exclude scrollbar width for perfect centering
+  width = canvas.width = document.documentElement.clientWidth;
   height = canvas.height = window.innerHeight;
   
   // Center the black hole perfectly
   cx = width / 2;
   cy = height / 2;
+  
+  // Make the emblem slightly smaller on mobile
+  EVENT_HORIZON_RADIUS = width < 768 ? 45 : 70;
 }
 window.addEventListener('resize', resize);
 resize();
@@ -16,7 +21,6 @@ resize();
 const particles = [];
 // Increased particle count for a very pristine, dense accretion disk
 const numParticles = 3000; 
-const EVENT_HORIZON_RADIUS = 70;
 
 for(let i = 0; i < numParticles; i++) {
   particles.push({
