@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Control Drift - Continuous Validation Platform</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Space+Grotesk:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Pristine Black Hole Background -->
+  <canvas id="blackhole-canvas"></canvas>
+  
+  <!-- Subtle overlay to ensure text remains readable over the bright accretion disk -->
+  <div class="overlay"></div>
+
+  <!-- Top Navigation -->
+  <nav class="navbar fade-in">
+    <div class="nav-container">
+      <div class="brand">
+        <img src="control_drift_super_res_8k.png" alt="Control Drift Emblem" class="logo-icon">
+        <span class="logo-text">CONTROL <span class="logo-drift">DRIFT</span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <main class="hero">
+    <div class="hero-content">
+      <h1 class="fade-in delay-100">Assume nothing.<br><span class="gradient-text">Validate everything.</span></h1>
+      <p class="subtitle fade-in delay-200">
+        A modern, practitioner-first platform to pressure-test security controls, expose silent failures, and measure true defensive readiness against real-world threats.
+      </p>
+      
+      <div class="action-group fade-in delay-300">
+        <a href="https://github.com/Control-Drift/Control-Drift" target="_blank" class="btn btn-primary btn-large">
+          <i class="fab fa-github"></i> View on GitHub
+        </a>
+      </div>
+
+      <div class="terminal-window glass-panel fade-in delay-400">
+        <div class="terminal-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="terminal-title">bash - control-drift</span>
+        </div>
+        <div class="terminal-body">
+          <code><span class="prompt">$</span> git clone https://github.com/Control-Drift/Control-Drift.git</code>
+          <code><span class="prompt">$</span> cd control-drift && npm run dev</code>
+          <code class="success">> Control Drift running at http://localhost:5173</code>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- The Pain Section (3 Quick Hits) -->
+  <section id="pain" class="features pain-section">
+    <div class="grid-container pain-grid">
+      <div class="feature-card glass-panel fade-in delay-100">
+        <h3 class="gradient-text">Defenses Degrade.</h3>
+        <p>Expectation rarely meets reality. Configurations drift and rules break over time. Provide your team the environment to catch these silent failures.</p>
+      </div>
+      <div class="feature-card glass-panel fade-in delay-200">
+        <h3 class="gradient-text">Model Bespoke Threats.</h3>
+        <p>Generic, automated campaigns don't know your network. Emulate threats specifically tailored to your unique crown jewels and validate your true defensive posture.</p>
+      </div>
+      <div class="feature-card glass-panel fade-in delay-300">
+        <h3 class="gradient-text">Expose the Unseen.</h3>
+        <p>Stop guessing if your SIEM caught the payload. Give defenders the tooling to discover exactly where security controls drop the ball.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Arsenal Section -->
+  <section id="arsenal" class="features">
+    <div class="section-header fade-in">
+      <h2>The Arsenal</h2>
+    </div>
+    
+    <div class="grid-container">
+      <div class="feature-card glass-panel fade-in delay-100">
+        <div class="icon-wrapper cyan">
+          <i class="fas fa-server"></i>
+        </div>
+        <h3>Flexible Architecture</h3>
+        <p>Start instantly in your browser for rapid testing, or attach any database or REST API backend with zero code changes for enterprise scale.</p>
+      </div>
+
+      <div class="feature-card glass-panel fade-in delay-200">
+        <div class="icon-wrapper purple">
+          <i class="fas fa-robot"></i>
+        </div>
+        <h3>AI-Augmented Workflows</h3>
+        <p>A context-aware AI assistant handles the heavy lifting: auto-mapping TTPs, generating simulation strategies, and instantly drafting executive reports.</p>
+      </div>
+
+      <div class="feature-card glass-panel fade-in delay-300">
+        <div class="icon-wrapper pink">
+          <i class="fas fa-project-diagram"></i>
+        </div>
+        <h3>Test Procedural Variations</h3>
+        <p>EDR caught the PowerShell payload? What about a compiled C# binary? Track nuanced procedural variations with a flexible event system.</p>
+      </div>
+
+      <div class="feature-card glass-panel fade-in delay-100">
+        <div class="icon-wrapper cyan">
+          <i class="fas fa-globe-americas"></i>
+        </div>
+        <h3>3D Posture Heatmap</h3>
+        <p>Stop staring at spreadsheets. Visualize actual readiness on an interactive 3D globe.</p>
+      </div>
+
+      <div class="feature-card glass-panel fade-in delay-200">
+        <div class="icon-wrapper purple">
+          <i class="fas fa-clipboard-list"></i>
+        </div>
+        <h3>Gap Tracker</h3>
+        <p>Prioritize and track remediation across your environment. Resolved gaps instantly update your global readiness metrics.</p>
+      </div>
+
+      <div class="feature-card glass-panel fade-in delay-300">
+        <div class="icon-wrapper pink">
+          <i class="fas fa-play-circle"></i>
+        </div>
+        <h3>Simulation Launcher</h3>
+        <p>Plan, execute, and log threat simulations seamlessly with an intuitive 4-step workflow.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Closer (Final CTA) -->
+  <section class="closer">
+    <div class="closer-content glass-panel fade-in">
+      <h2>Ready to validate your defenses?</h2>
+      <p>Experience the modern, open-source platform for continuous validation, BAS, and purple teaming. Launch your environment in under 60 seconds.</p>
+      <a href="https://github.com/Control-Drift/Control-Drift" target="_blank" class="btn btn-primary btn-massive fade-in delay-200">
+        <i class="fab fa-github"></i> Get Started on GitHub
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="fade-in">
+    <div class="footer-content">
+      <div class="brand">
+        <img src="control_drift_super_res_8k.png" alt="Control Drift Emblem" class="logo-icon">
+        <span class="logo-text">CONTROL <span class="logo-drift">DRIFT</span></span>
+      </div>
+      <p class="copyright">Licensed under Apache 2.0. Built for modern security teams.</p>
+      <div class="footer-links">
+        <a href="https://github.com/Control-Drift/Control-Drift" target="_blank"><i class="fab fa-github"></i> Source Code</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
