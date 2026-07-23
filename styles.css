@@ -18,11 +18,14 @@
   padding: 0;
 }
 
-body {
+body, html {
   background-color: var(--bg-deep);
   color: var(--text-main);
   font-family: 'Inter', -apple-system, sans-serif;
   overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
   line-height: 1.6;
 }
 
@@ -35,7 +38,7 @@ h1, h2, h3, .logo-text, .badge, .btn {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   z-index: -2;
   pointer-events: none;
@@ -45,7 +48,7 @@ h1, h2, h3, .logo-text, .badge, .btn {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   z-index: -1;
   background: radial-gradient(circle at 50% 50%, transparent 20%, var(--bg-deep) 100%);
@@ -593,5 +596,9 @@ footer {
 
   .hero {
     padding: 6rem 1rem 3rem;
+  }
+
+  .hero-brand .logo-icon {
+    height: 250px;
   }
 }
