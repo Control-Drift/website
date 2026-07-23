@@ -161,6 +161,11 @@ h1, h2, h3, .logo-text, .badge, .btn {
   z-index: 1;
 }
 
+.hero-brand {
+  margin-bottom: 1.5rem;
+  justify-content: center;
+}
+
 .hero-content::before {
   content: '';
   position: absolute;
@@ -493,11 +498,13 @@ footer {
 }
 
 .footer-content .brand {
-  margin-left: -3.5rem; /* Pull left so the C aligns with the glass panel above it */
+  margin-left: 0; 
 }
 
-.footer-content .logo-icon {
-  height: 80px; /* Slightly smaller for the footer */
+.hero-brand .logo-icon {
+  height: 350px; 
+  max-width: 90vw;
+  margin: 0;
 }
 
 .footer-links {
