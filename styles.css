@@ -95,10 +95,8 @@ h1, h2, h3, .logo-text, .badge, .btn {
   width: auto;
   object-fit: contain;
   filter: drop-shadow(0 0 8px rgba(157, 78, 221, 0.4));
-  position: absolute;
-  right: 100%;
-  margin-right: -1.25rem;
-  margin-top: 2px;
+  margin-right: -1.5rem;
+  margin-left: -1.5rem;
 }
 
 .logo-text {
@@ -461,3 +459,20 @@ footer {
 .delay-200 { transition-delay: 200ms; }
 .delay-300 { transition-delay: 300ms; }
 .delay-400 { transition-delay: 400ms; }
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .logo-icon {
+    height: 80px;
+    margin-right: -1rem;
+    margin-left: -1rem;
+  }
+
+  .hero h1 {
+    font-size: 3.2rem;
+  }
+
+  .hero {
+    padding: 6rem 1rem 3rem;
+  }
+}
